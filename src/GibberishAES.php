@@ -52,6 +52,8 @@
  * @link http://opensource.org/licenses/MIT
  */
 
+namespace GibberishAES;
+
 class GibberishAES {
 
     protected static $key_size = 256;            // The default key size in bits

@@ -85,8 +85,20 @@ License: The MIT License (MIT), [http://opensource.org/licenses/MIT](http://open
 A fragment of code is under the New BSD License, George Argyros, 2012.
 
 
+## Installation
 
-running unit-tests
+you can use the library by adding the following snippet to your composer.json
+
+```javascript
+{
+    "require": {
+        "dittertp/gibberish-aes-php" : "1.1.*",
+    },
+}
+```
+
+
+## running unit-tests
 ---------
 
 ```bash

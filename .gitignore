@@ -8,3 +8,4 @@
 .sass-cache
 build.properties
 composer.lock
+.phpunit.result.cache

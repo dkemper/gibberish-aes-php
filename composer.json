@@ -3,7 +3,7 @@
     "description": "AES encryption library",
     "keywords": ["aes","encryption"],
     "type": "library",
-    "license": "The MIT License (MIT)",
+    "license": "MIT",
     "authors": [
         {
             "name": "Ivan Tcholakov"

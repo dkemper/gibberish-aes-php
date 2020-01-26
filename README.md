@@ -1,3 +1,7 @@
+[![Build Status](https://travis-ci.org/dittertp/gibberish-aes-php.svg?branch=master)](https://travis-ci.org/dittertp/gibberish-aes-php)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/dittertp/gibberish-aes-php/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/dittertp/gibberish-aes-php/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/dittertp/gibberish-aes-php/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/dittertp/gibberish-aes-php/?branch=master)
+
 Gibberish AES, a PHP Implementation
 ===================================
 

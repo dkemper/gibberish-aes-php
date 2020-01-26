@@ -18,15 +18,10 @@ http://iridadesign.com/starter-public-edition-4/www/playground/gibberish-aes
 Requirements:
 -----------------------------------
 
-- OpenSSL functions installed and PHP version >= 5.3.3
+php >= 7.1
 
-or
+openssl and mbstring module
 
-- Mcrypt functions installed and PHP version < 7.1.0-alpha
-
-For PHP under version 7 it is recommendable you to install within your project
-"PHP 5.x support for random_bytes() and random_int()",
-https://github.com/paragonie/random_compat
 
 Usage Example:
 -----------------------------------
@@ -87,26 +82,38 @@ echo '<br />';
 GibberishAES::size($old_key_size);
 ```
 
-Author: Ivan Tcholakov, 2012-2016.  
+Author: Ivan Tcholakov, 2012-2016.
+
+Author: Philipp Dittert, 2019-2020.
+  
 License: The MIT License (MIT), [http://opensource.org/licenses/MIT](http://opensource.org/licenses/MIT)
 
 A fragment of code is under the New BSD License, George Argyros, 2012.
 
 
-## Installation
+Installation
+---------
 
 you can use the library by adding the following snippet to your composer.json
 
 ```javascript
 {
     "require": {
-        "dittertp/gibberish-aes-php" : "^1.3"
+        "dittertp/gibberish-aes-php" : "^2.0"
     },
 }
 ```
 
+running code style check
+---------
 
-## running unit-tests
+```bash
+composer update
+vendor/bin/phpcs --standard=PSR12 src/
+```
+
+
+running unit-tests
 ---------
 
 ```bash

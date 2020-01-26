@@ -28,15 +28,6 @@ class GibberishAESTest extends \PHPUnit\Framework\TestCase
 
             $this->assertEquals($example, GibberishAES::dec($encrypted, $this->passPhrase));
         }
-
-        GibberishAES::size("128");
-
-        foreach ($this->examples as $example) {
-            $encrypted = GibberishAES::enc($example, $this->passPhrase);
-
-            $this->assertEquals($example, GibberishAES::dec($encrypted, $this->passPhrase));
-        }
-
     }
 
     public function testEncryptionWith192BitKeySize()
@@ -48,15 +39,6 @@ class GibberishAESTest extends \PHPUnit\Framework\TestCase
 
             $this->assertEquals($example, GibberishAES::dec($encrypted, $this->passPhrase));
         }
-
-        GibberishAES::size("192");
-
-        foreach ($this->examples as $example) {
-            $encrypted = GibberishAES::enc($example, $this->passPhrase);
-
-            $this->assertEquals($example, GibberishAES::dec($encrypted, $this->passPhrase));
-        }
-
     }
 
     public function testEncryptionWith256BitKeySize()
@@ -68,14 +50,5 @@ class GibberishAESTest extends \PHPUnit\Framework\TestCase
 
             $this->assertEquals($example, GibberishAES::dec($encrypted, $this->passPhrase));
         }
-
-        GibberishAES::size("256");
-
-        foreach ($this->examples as $example) {
-            $encrypted = GibberishAES::enc($example, $this->passPhrase);
-
-            $this->assertEquals($example, GibberishAES::dec($encrypted, $this->passPhrase));
-        }
-
     }
 }

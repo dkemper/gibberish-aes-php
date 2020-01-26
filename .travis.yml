@@ -1,14 +1,17 @@
 language: php
 
 php:
-  - 7.2
   - 7.1
+  - 7.2
+  - 7.3
+  - 7.4
 
 before_install:
   - wget https://scrutinizer-ci.com/ocular.phar
 
 script:
   - composer update
+  - vendor/bin/phpcs --standard=PSR12 src/
   - vendor/bin/phpunit --bootstrap bootstrap.php --configuration phpunit.xml
   - php ocular.phar code-coverage:upload --format=php-clover $TRAVIS_BUILD_DIR/target/reports/unit/clover.xml
 
